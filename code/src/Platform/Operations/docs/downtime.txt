@@ -1,0 +1,12 @@
+The goal of the this operation is to determine the reason for downtime of a application
+Check the application log to see if there are any errors, 
+Only if error status is yellow or red then check for most common error, 
+If status of logs were green we proceed to checking the queue health
+If the most common error is database related then check the database connection 
+If the database connection is up then check if too many connections are made to database 
+If database is the not the issue then check queue health
+to check the queue health check the queload and then check the queue response time
+If database health is red or the queue health is red then we know that it is the cause of the downtime
+When the cause of the downtime is confirmed then summarize the analysis done and complete the operation
+If cause cannot be determined after all the checks then just say reason is NotFound and complete the operation
+completed

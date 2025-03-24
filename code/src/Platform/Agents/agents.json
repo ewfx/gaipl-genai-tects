@@ -1,0 +1,42 @@
+{
+    "agents" : [
+        {
+            "name":"database_ping",
+            "discription":"Can ping the database and determine if the database connection is working",
+            "type":"measurement",
+            "addtionalinfo":""
+
+        },
+        {
+            "name":"database_connections",
+            "discription":"Checks the number of connections to the database and tell us if the health of the databse connections",
+            "type":"measurement",
+            "addtionalinfo":""
+
+        },
+        {
+            "name":"error_count",
+            "discription":"Checks the application log for errors and reports the health of applucation based on errors",
+            "type":"measurement",
+            "addtionalinfo":"Part of application log checking"
+        },
+        {
+            "name":"frequent_error",
+            "discription":"Checks the most frequent error from application logs",
+            "type":"measurement",
+            "addtionalinfo":"Part of application log checking"
+        },
+        {
+            "name":"queue_load",
+            "discription":"Checks the load on the queue and reports the health status",
+            "type":"measurement",
+            "addtionalinfo":"Part of queue stats"
+        },
+        {
+            "name":"queue_response_time",
+            "discription":"Checks the response time of the queue and reports the health status",
+            "type":"measurement",
+            "addtionalinfo":"Part of queue stats"
+        }
+    ]
+}
