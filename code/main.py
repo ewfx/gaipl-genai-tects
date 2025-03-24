@@ -33,6 +33,6 @@ def predict_debugging_step(incident_description):
 
 if __name__ == "__main__":
     # Example test case
-    sample_description = "calls failure"
+    sample_description = "Salesforce connection failure"
     predicted_step = predict_debugging_step(sample_description)
     print(f"Predicted Debugging Step: {predicted_step}")
