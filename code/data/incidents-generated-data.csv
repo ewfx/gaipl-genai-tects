@@ -1,0 +1,43 @@
+﻿Incident ID,Incident Name,Incident Description,Priority,Assigned To,Status,Debugging Steps,Resolution,Communication Log
+INC1001,Database Downtime,Database service is unreachable.,1 - Critical,Alice Johnson,Resolved,1. Check server logs for DB errors.,Restarted DB services and confirmed successful queries.,"Customer: DB is down. Support: Restarted DB services, verify now."
+,,,,,,2. Verify network connectivity to DB.,,
+,,,,,,3. Check storage availability and replication lag.,,
+,,,,,,4. Restart database service if necessary.,,
+INC1002,Network Latency Issue,Slow network performance during peak hours.,2 - High,Bob Smith,In Progress,1. Analyze network traffic patterns.,Applied QoS policies to prioritize critical traffic.,Customer: Network is slow. Support: Running diagnostics.
+,,,,,,2. Check switch/router logs.,,
+,,,,,,3. Identify congested nodes.,,
+,,,,,,4. Apply QoS policies to prioritize critical traffic.,,
+INC1003,Email Server Failure,Unable to send emails; messages stuck in queue.,1 - Critical,Charlie Williams,Resolved,1. Review SMTP logs for errors.,Restarted mail services and verified outgoing email flow.,Customer: Can’t send emails. Support: Restarted mail services. Test now.
+,,,,,,2. Check email queues for backlogs.,,
+,,,,,,3. Verify DNS & MX records.,,
+,,,,,,4. Restart mail services if necessary.,,
+INC1004,CRM Login Failure,Users unable to log in due to authentication errors.,2 - High,David Lee,Resolved,1. Verify SSO authentication logs.,Cleared session caches and updated expired certificates.,"Customer: CRM login issue. Support: Reset authentication, try now."
+,,,,,,2. Check AD synchronization status.,,
+,,,,,,3. Reset authentication settings.,,
+,,,,,,4. Clear session caches and restart authentication service.,,
+INC1005,High CPU Usage on Server,Application server showing 95% CPU usage.,1 - Critical,Alice Johnson,In Progress,1. Monitor CPU & memory usage.,Restarted services and optimized resource allocation.,Customer: App server is slow. Support: Investigating CPU usage.
+,,,,,,2. Identify resource-heavy processes.,,
+,,,,,,3. Restart non-essential background tasks.,,
+,,,,,,4. Optimize resource allocation.,,
+INC1006,API Gateway Timeout,API requests are intermittently failing.,2 - High,Bob Smith,Escalated,1. Check API gateway logs.,Scaled up API nodes and implemented request retries.,"Customer: API calls are failing. Support: Reviewing logs, will update."
+,,,,,,2. Verify backend server health.,,
+,,,,,,3. Monitor API latency & errors.,,
+,,,,,,4. Scale up API nodes and implement request retries.,,
+INC1007,Unauthorized Access Alert,Multiple failed login attempts detected.,1 - Critical,Charlie Williams,Resolved,1. Investigate security logs.,Enforced MFA and notified the security team.,"Customer: Unusual login attempts. Support: Blocked source, enabled MFA."
+,,,,,,2. Identify suspicious IPs.,,
+,,,,,,3. Block unauthorized access.,,
+,,,,,,4. Enforce MFA.,,
+INC1008,VPN Connectivity Issue,Users unable to connect to corporate VPN.,2 - High,David Lee,Resolved,1. Verify VPN gateway logs.,Re-authenticated users and confirmed stable connection.,"Customer: VPN not working. Support: Restarted VPN gateway, try now."
+,,,,,,2. Check firewall rules for VPN traffic.,,
+,,,,,,3. Restart VPN services.,,
+,,,,,,4. Re-authenticate users.,,
+INC1009,File Server Unavailable,Shared network drive inaccessible.,1 - Critical,Alice Johnson,Resolved,1. Restart file server.,"Restored NTFS & SMB permissions, ran a file system consistency check.","Customer: Can’t access shared drive. Support: Restarted, should work now."
+,,,,,,2. Verify storage mount points.,,
+,,,,,,3. Check event logs for disk failures.,,
+,,,,,,4. Restore NTFS & SMB permissions if needed.,,
+INC1010,Web Application Crash,Internal web application frequently crashes.,3 - Medium,Bob Smith,In Progress,1. Check application logs for error stack traces.,Restarted app & monitored logs for stability.,"Customer: App crashes randomly. Support: Checking logs, will update."
+,,,,,,2. Debug recent deployments.,,
+,,,,,,3. Roll back unstable update.,,
+,,,,,,4. Restart application server.,,
+INC1011,Firewall Policy Issue,Users blocked from accessing external services.,2 - High,Charlie Williams,Resolved,1. Review firewall logs.,Applied policy updates and restarted firewall services.,Customer: Can’t access external apps. Support: Firewall rules updated.
+,,,,,,2. Identify blocked traffic.,,
