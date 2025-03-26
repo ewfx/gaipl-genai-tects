@@ -1,8 +1,8 @@
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
-from langchain.llms import OpenAI
-from Utilities.agent_response_management import get_history_object
+from langchain_community.llms import OpenAI
+from Platform.Utilities.agent_response_management import get_history_object
 import json
 import os
 

@@ -2,12 +2,12 @@ import os
 
 #Embedding API keys directly in your code is definilty not secure or recommended for production environments.
 #Always use proper key management practices.
-os.environ["OPENAI_API_KEY"] = "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"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-from Flows.core_graph import create_graph
+from Platform.Flows.core_graph import create_graph
 from typing import Annotated, TypedDict
 from langgraph.graph import StateGraph, END
-from Utilities.agent_response_management import get_history_object
+from Platform.Utilities.agent_response_management import get_history_object
 import os
 
 

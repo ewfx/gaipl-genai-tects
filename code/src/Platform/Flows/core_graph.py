@@ -1,9 +1,10 @@
 from langgraph.graph import StateGraph, END
 from typing import Annotated, TypedDict
-from Agents.Measure.database_measurements import database_connections, database_ping
-from Agents.Measure.queue_measurements import queue_load, queue_response_time
-from Agents.Measure.log_measurements import error_count, frequent_error
-from Agents.Decision.decisions import execute_agent, execute_operation
+from Platform.Agents.Measure.database_measurements import database_connections, database_ping
+from Platform.Agents.Measure.queue_measurements import queue_load, queue_response_time
+from Platform.Agents.Measure.log_measurements import error_count, frequent_error
+from Platform.Agents.Measure.credentials_check import credentials_check
+from Platform.Agents.Decision.decisions import execute_agent, execute_operation
 
 class AgentState(TypedDict):
     input: str
@@ -25,6 +26,7 @@ def create_graph():
     workflow.add_node("frequent_error", frequent_error)
     workflow.add_node("queue_response_time", queue_response_time)
     workflow.add_node("queue_load", queue_load)
+    workflow.add_node("credentials_check", credentials_check)
 
     workflow.add_conditional_edges(
         "execute_operation",
@@ -44,7 +46,8 @@ def create_graph():
             "error_count": "error_count",
             "frequent_error": "frequent_error",
             "queue_response_time": "queue_response_time",
-            "queue_load": "queue_load"
+            "queue_load": "queue_load",
+            "credentials_check": "credentials_check"
         }
     )
 
@@ -55,6 +58,7 @@ def create_graph():
     workflow.add_edge("frequent_error", "execute_operation")
     workflow.add_edge("queue_response_time", "execute_operation")
     workflow.add_edge("queue_load", "execute_operation")
+    workflow.add_edge("credentials_check", "execute_operation")
 
     workflow.add_edge("execute_operation", END)
 

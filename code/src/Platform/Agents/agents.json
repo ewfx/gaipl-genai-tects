@@ -37,6 +37,12 @@
             "discription":"Checks the response time of the queue and reports the health status",
             "type":"measurement",
             "addtionalinfo":"Part of queue stats"
+        },
+        {
+            "name":"credentials_check",
+            "discription":"Checks the validity of account credentials and reports the health status",
+            "type":"measurement",
+            "addtionalinfo":"Part of Credentials stats"
         }
     ]
 }
