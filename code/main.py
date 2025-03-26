@@ -1,12 +1,14 @@
 import joblib
 from src.model import train_and_save_model
 import os
+from src.transform_debugging_steps import format_debugging_steps
+from src.structure_debugging_steps import format_debugging_steps_with_llm
 
 # File paths
-MODEL_PATH = "src/model.pkl"
-VECTORIZER_PATH = "src/vectorizer.pkl"
+MODEL_PATH = "code/src/model.pkl"
+VECTORIZER_PATH = "code/src/vectorizer.pkl"
 
-print(os.path.dirname(os.path.abspath(__file__)))
+#print(os.path.dirname(os.path.abspath(__file__)))
 
 # Check if model exists, else train it
 if not os.path.exists(MODEL_PATH) or not os.path.exists(VECTORIZER_PATH):
@@ -29,10 +31,12 @@ def predict_debugging_step(incident_description):
     # Predict the debugging step
     prediction = model.predict(description_tfidf)
 
-    return prediction[0]  # Get the first (and only) predicted step
+    formatted_steps = format_debugging_steps_with_llm(prediction[0])
+
+    return formatted_steps  # Get the formatted predicted steps
 
 if __name__ == "__main__":
     # Example test case
-    sample_description = "Salesforce connection failure"
+    sample_description = "Cloud backup failure"
     predicted_step = predict_debugging_step(sample_description)
     print(f"Predicted Debugging Step: {predicted_step}")
