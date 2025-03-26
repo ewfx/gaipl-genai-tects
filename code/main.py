@@ -1,6 +1,7 @@
 import joblib
 from src.model import train_and_save_model
 import os
+from src.transform_debugging_steps import format_debugging_steps
 
 # File paths
 MODEL_PATH = "src/model.pkl"
@@ -29,10 +30,12 @@ def predict_debugging_step(incident_description):
     # Predict the debugging step
     prediction = model.predict(description_tfidf)
 
-    return prediction[0]  # Get the first (and only) predicted step
+    formatted_steps = format_debugging_steps(prediction[0])
+
+    return formatted_steps  # Get the formatted predicted steps
 
 if __name__ == "__main__":
     # Example test case
-    sample_description = "Salesforce connection failure"
+    sample_description = "Cloud backup failure"
     predicted_step = predict_debugging_step(sample_description)
     print(f"Predicted Debugging Step: {predicted_step}")
