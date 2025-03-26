@@ -1,4 +1,4 @@
-# 🚀 Project Name
+# 🚀 GenAITects - LangGraph powered Agentic AI - Platform Support Environment
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
@@ -56,5 +56,4 @@ Describe the major technical or non-technical challenges your team encountered.
 - 🔹 AI: Predictive Modeling
 
 ## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- **GenAI Tects**
