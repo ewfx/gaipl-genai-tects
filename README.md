@@ -42,7 +42,7 @@ Describe the major technical or non-technical challenges your team encountered.
    ```
 2. Install dependencies  
    ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
+   pip install -r requirements.txt (for Python)
    ```
 3. Run the project  
    ```sh
