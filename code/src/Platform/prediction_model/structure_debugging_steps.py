@@ -9,7 +9,7 @@ load_dotenv()
 API_KEY = os.getenv("GEMINI_API_KEY")
 
 if not API_KEY:
-    raise ValueError("API key not found. Please set the GEMINI_API_KEY environment variable.")
+    raise ValueError("API key not found. Please set the GEMINI_API_KEY environment variable.")    
 
 def format_debugging_steps_with_llm(steps):
     """

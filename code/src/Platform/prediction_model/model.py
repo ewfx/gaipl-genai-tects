@@ -2,7 +2,7 @@
 # The model is trained on the preprocessed data and saved to disk using joblib.
 from sklearn.linear_model import LogisticRegression
 import joblib
-from .preprocess import load_and_preprocess_data
+from Platform.prediction_model.preprocess import load_and_preprocess_data
 import os
 from sklearn.metrics import accuracy_score
 
