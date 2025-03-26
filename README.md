@@ -1,4 +1,4 @@
-# 🚀 Project Name
+# 🚀 GenAITects - LangGraph powered Agentic AI - Platform Support Environment
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
@@ -42,19 +42,18 @@ Describe the major technical or non-technical challenges your team encountered.
    ```
 2. Install dependencies  
    ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
+   pip install -r requirements.txt (for Python)
    ```
 3. Run the project  
    ```sh
-   npm start  # or python app.py
+   python -m code.src.Platform.orchestrator.app.py
    ```
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+- 🔹 Frontend: AdminLite
+- 🔹 Backend: Python/Flask
+- 🔹 Other: OpenAI API / LangGraph / Gemini
+- 🔹 AI: Predictive Modeling
 
 ## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- **GenAI Tects**
