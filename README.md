@@ -46,7 +46,7 @@ Describe the major technical or non-technical challenges your team encountered.
    ```
 3. Run the project  
    ```sh
-   npm start  # or python app.py
+   python -m code.src.Platform.orchestrator.app.py
    ```
 
 ## 🏗️ Tech Stack
