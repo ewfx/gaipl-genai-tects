@@ -7,7 +7,7 @@ import os
 from sklearn.metrics import accuracy_score
 
 def train_and_save_model():   
-    X_train, X_test, y_train, y_test, vectorizer = load_and_preprocess_data("data\incidents-generated-data-v3.csv")
+    X_train, X_test, y_train, y_test, vectorizer = load_and_preprocess_data("code\data\incidents-generated-data-v3.csv")
 
     # Train a simple model
     model = LogisticRegression()
